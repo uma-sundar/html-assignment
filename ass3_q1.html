@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Awesome Video</title>
+</head>
+<body>
+    <div id="head" align="center" style="margin-bottom:0;">
+        <img width="50px" src="images.png">
+        <h1>Awesome Online Videos</h1>
+    </div>
+    <div id="content" align="center" style="margin-bottom:0;">
+        <video id="video1" width="420" poster="wipro.jpg">
+            <source src="wipro.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video><br/>
+        <button type="button" onclick="playPause()">Play</button>
+        <button type="button" onclick="playPause()">Pause</button>
+        <script>
+            var video11=document.getElementById("video1");
+            function playPause(){ 
+                if (video11.paused) 
+                    video11.play(); 
+                else 
+                    video11.pause(); 
+            } 
+        </script>
+    </div>
+</body>
+</html>
